@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    font-size: x-large;
+    font-weight: 100;
+    font-stretch: ultra-expanded;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+}
+
+.substrate {
+    width: 30%;
+    background-image: linear-gradient(#ffdd00 20%, #da9770 90%);
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px black;
+}
+
+.text {
+    text-align: center;
+    font-family: "Impact", sans-serif;
+    font-size: 25px;
+}
+
+.personCard {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.card {
+    height: 600px;
+    width: 400px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.card {
+    display: inline-block;
+}
+
+.card {
+    transition: 1s;
+    display: block;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+#personSerious-sam {
+    background: url(img/personSam.png);
+
+}
+
+#personLebovski-andrik {
+    background: url(img/personAndrik.png);
+}
+
+#personCaptain-Memo {
+    background: url(img/PersonLeha.png);
+}
+
+
+.cardBlock {
+    display: block;
+    background-image: linear-gradient(#0063c5 20%, #001364 90%);
+    height: 900px;
+    box-shadow: 5px 7px 7px black;
+}
+
+.gameBlock {
+    display: block;
+    background-image: linear-gradient(#fff800 20%, #ffffff 90%);
+}
+
+.currentGameBlock {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+
+#Serious-sam {
+    height: 50px;
+    width: 50px;
+    background-image: url(img/sam.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+#Captain-Memo {
+    height: 50px;
+    width: 50px;
+    background-image: url(img/leha.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+#Lebovski-andrik {
+    height: 50px;
+    width: 50px;
+    background-image: url(img/andrik.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+.returnToMainMenu {
+    background: linear-gradient(to left, #00aeff, #0023ff);
+    width: 200px;
+    height: 50px;
+    border-radius: 7px;
+    position: relative;
+    top: 150px;
+    left: 900px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.piki {
+    width: 20px;
+    height: 40px;
+    background-image: url(img/piki.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: personMov 1.5s infinite linear;
+}
+
+@keyframes personMov {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 130px;
+    }
+    50% {
+        top: 80px;
+    }
+    80% {
+        top: 130px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    position: relative;
+    bottom: 60px;
+    height: 50px;
+    width: 50px;
+    border: black 2px groove;
+    border-radius: 5px;
+    font-family: 'Impact', sans-serif;
+}
+
+.footer {
+    display: flex;
+    /*border: 5px solid white;*/
+    height: 170px;
+    justify-content: space-around;
+    margin-top: 13px;
+}
+
+.topResult {
+    border-radius: 5px;
+    display: flex;
+    height: 150px;
+    width: 500px;
+    background-image: linear-gradient(#ffdd00 20%, #da9770 90%);
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px black;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.wrapperResult {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapperLocalStorage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.localStor {
+    width: 200px;
+    height: 50px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.playerResult {
+    width: 200px;
+    height: 50px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
